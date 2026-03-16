@@ -1,4 +1,4 @@
-package za.ac.cput.domain.factory;
+package za.ac.cput.factory;
 
 import za.ac.cput.domain.Admin;
 
