@@ -37,6 +37,16 @@ public class ContactDetails {
         return emergencyContactName;
     }
 
+    @Override
+    public String toString() {
+        return "ContactDetails{" +
+                "contactId='" + contactId + '\'' +
+                ", cellphoneNumber='" + cellphoneNumber + '\'' +
+                ", emergencyContactNumber='" + emergencyContactNumber + '\'' +
+                ", emergencyContactName='" + emergencyContactName + '\'' +
+                '}';
+    }
+
     public static class Builder {
 
         private String contactId;
@@ -69,4 +79,3 @@ public class ContactDetails {
         }
     }
 }
-
