@@ -2,7 +2,7 @@ package za.ac.cput.repository;
 
 import za.ac.cput.entity.Booking;
 
-/* Booking.java
+/* BookingRepository.java - Repository interface for Booking entity
 Author: Collins Shibambo (230093183)
 Date: 25 March 2026
 */
