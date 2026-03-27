@@ -46,4 +46,30 @@ class BookingTest {
     void getStatus() {
         assertEquals(BookingStatus.ACTIVE, booking.getStatus());
     }
+
+    @Test
+    @Order(4)
+    void getBookingDateTime() {
+        assertNotNull(booking.getBookingDateTime());
+        System.out.println(booking.getBookingDateTime());
+    }
+
+    @Test
+    @Order(5)
+    void testMemberIsNull() {
+        assertNull(booking.getMember());
+    }
+
+    @Test
+    @Order(6)
+    void testTrainerIsNull() {
+        assertNull(booking.getTrainer());
+    }
+
+    @Test
+    @Order(7)
+    void testSlotIsNull() {
+        assertNull(booking.getSlot());
+    }
+
 }
