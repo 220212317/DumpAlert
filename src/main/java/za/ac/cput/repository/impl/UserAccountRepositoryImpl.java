@@ -5,7 +5,6 @@ package za.ac.cput.repository.impl;
         26 March 2026
         */
 import za.ac.cput.entity.UserAccount;
-import za.ac.cput.entity.UserProfile;
 import za.ac.cput.repository.UserAccountRepository;
 
 import java.util.ArrayList;
@@ -13,9 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class UserAccountRepositoryImpl implements UserAccountRepository
-
-{
+public class UserAccountRepositoryImpl implements UserAccountRepository {
   private static UserAccountRepositoryImpl repository;
   private Map<String, UserAccount> userAccountMap;
      private UserAccountRepositoryImpl(){

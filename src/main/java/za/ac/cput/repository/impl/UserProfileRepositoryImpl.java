@@ -1,7 +1,6 @@
 package za.ac.cput.repository.impl;
 
 
-import za.ac.cput.entity.UserAccount;
 import za.ac.cput.entity.UserProfile;
 import za.ac.cput.repository.UserProfileRepository;
 /*
@@ -31,7 +30,7 @@ public class UserProfileRepositoryImpl implements UserProfileRepository {
     @Override
     public UserProfile create(UserProfile userProfile) {
         userProfileMap.put(userProfile.getProfileId(),userProfile);
-         return userProfile;
+        return userProfile;
     }
 
     @Override
@@ -40,7 +39,7 @@ public class UserProfileRepositoryImpl implements UserProfileRepository {
         return userProfileMap.get(id);
     }
 
-       @Override
+    @Override
     public UserProfile update(UserProfile userProfile) {
         if (userProfileMap.containsKey(userProfile.getProfileId())) {
             userProfileMap.put(userProfile.getProfileId(), userProfile);
@@ -61,4 +60,3 @@ public class UserProfileRepositoryImpl implements UserProfileRepository {
     }
 
 }
-
