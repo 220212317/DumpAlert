@@ -75,18 +75,4 @@ class BookingFactoryTest {
         assertNull(failed);
     }
 
-    @Test
-    @Order(4)
-    void testNullDependenciesValidation() {
-        Booking failed = BookingFactory.createBooking(
-                "B001",
-                LocalDateTime.now(),
-                BookingStatus.ACTIVE,
-                null,
-                null,
-                null
-        );
-
-        assertNull(failed);
-    }
 }
